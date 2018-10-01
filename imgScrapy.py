@@ -10,9 +10,9 @@ sys.stdin.encoding
 path=os.path.abspath('.')
 print(path)
 keyword=input("请输入想要爬取的表情包的名字  ")
-newpath=path+'\img\\'+keyword
+newpath=path+'\\img\\'+keyword
 if(os.path.exists(newpath)==False):
-    os.makedirs(path+'\img\\'+keyword)
+    os.makedirs(path+'\\img\\'+keyword)
 qkeyword=urllib.parse.quote(keyword)
 page="&page=2"
 search='search?type=photo&more=1&keyword='
