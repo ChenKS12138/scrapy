@@ -5,10 +5,10 @@ import urllib
 import re
 import sys
 import os
+import time
 
 sys.stdin.encoding
 path=os.path.abspath('.')
-print(path)
 keyword=input("请输入想要爬取的表情包的名字  ")
 newpath=path+'\\img\\'+keyword
 if(os.path.exists(newpath)==False):
@@ -31,7 +31,6 @@ for i in match:
     f.write(i.group())
     f.write('\n')
     totolnum+=1
-f.close()
 f=open('match.txt','r+')
 str=f.read()
 pattern2='(http|https):(/|\w|\.)+(gif|jpg|png)'
