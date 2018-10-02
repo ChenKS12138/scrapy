@@ -45,4 +45,5 @@ f.close()
 if(totolnum==0):
     print('对不起,找不到关于%s的表情包,请重新输入' %keyword)
 else:
-    print('爬取完成,爬取%d个文件' %totolnum)
+    print('爬取完成,爬取%d个文件\n保存在%s' %(totolnum,newpath))
+input('请按任意键继续')
